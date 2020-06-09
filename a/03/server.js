@@ -1,7 +1,7 @@
 let http = require( 'http' );
 
 let server = http.createServer( function ( req, res ) {
-	res.write( 'Hello World!' );
+	res.write( '<h1>Hello World!</h1>' );
 	res.end();
 });
 

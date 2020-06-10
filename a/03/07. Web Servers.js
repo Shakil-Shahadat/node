@@ -1,3 +1,6 @@
+// All code written, but haven't understood the second part
+
+// Part 1: OK
 let http = require( 'http' );
 let fs = require( 'fs' );
 

@@ -1,4 +1,5 @@
 let http = require( 'http' );
+let fs = require( 'fs' );
 
 let server = http.createServer( function ( req, res ) {
 	res.write( '<h1>Hello World!</h1>' );
@@ -7,4 +8,15 @@ let server = http.createServer( function ( req, res ) {
 	res.end();
 });
 
-server.listen( 3000 );
+// server.listen( 3000 );
+
+// Part 2: haven't understood the code
+let server2 = http.createServer();
+
+server2.on( 'request', function ( req, res ) {
+
+	fs.createReadStream( '07. Web Servers.js' ).pipe( res );
+
+});
+
+server2.listen( 3000 );

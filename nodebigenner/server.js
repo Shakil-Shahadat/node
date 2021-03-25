@@ -1,5 +1,5 @@
 const http = require( 'http' );
-let url = require( 'url' );
+const url = require( 'url' );
 
 function start( route, handle )
 {
